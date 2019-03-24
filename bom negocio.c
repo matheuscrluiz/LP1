@@ -11,11 +11,7 @@ int main (void)
 
     if (preco > 1000)
     {
-        printf("Gastou mais que o desejado \n");
-        printf("Digite novamente o valor em dolar: \n");
-        scanf ("%f", &real);
-
-        preco = (real * dolar);
+       printf("Voce ultrapassou a cota. Nao eh bom negocio.");
     }
     else
     {
