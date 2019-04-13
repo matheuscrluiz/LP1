@@ -1,0 +1,37 @@
+//Leia dois números e exiba-os.
+//Crie um ponteiro pra variável de maior valor.
+//Subtraia 50 da variável com o maior valor.
+//Exiba os números a e b.
+
+
+#include <stdio.h>
+
+int main (void)
+{
+	int a,b;
+	int* p;
+
+	printf("Digite um valor para A: ");
+	scanf("%d", &a);
+	printf("\nDigite um valor para B: ");
+	scanf("%d", &b);
+	
+	printf("\n Os valores de A e B são = %d e %d", a, b);
+
+
+	if (a > b)
+		{
+			p = &a;
+		}
+
+	else 
+		{
+			p = &b;
+		}
+
+	*p = (*p - 50);
+
+	printf("\n Os valores de A e B são = %d e %d", a, b);
+	
+	return 0;
+}
