@@ -1,0 +1,36 @@
+//receba dois n ́umeros inteiros positivos por parˆametro e retorne asoma dos N n ́umeros inteiros existentes entre eles//
+
+#include <stdio.h>
+
+int soma(int n1, int n2)
+{	
+	int i;
+	if (n1> n2)
+		{
+			for(i=n2; i<n1;i++)
+				{
+					printf("%d \n", i);
+									
+				}
+		}
+	else
+		{
+			for(i=n1; i<n2;i++)
+				{
+					printf("%d \n", i);
+									
+				}
+		}
+}
+
+int main (void)
+{
+	int n1,n2, som																																																																																																																																																																											;
+	printf("Digite: ");
+	scanf("%d", &n1);
+	printf("Digite: ");
+	scanf("%d", &n2);
+
+	printf("%d", soma(n1,n2));
+	return 0;
+}
