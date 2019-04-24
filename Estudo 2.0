@@ -1,0 +1,29 @@
+//Função que retorna qual dos números é o maior//
+
+#include <stdio.h>
+
+int maior(int n1, int n2)
+{
+	int maior;
+	if(n1> n2)
+		{
+			maior = n1;
+		}
+	else{
+			maior = n2;
+		}
+}
+
+
+int main (void)
+{
+	int n1, n2;
+	printf("Digite: ");
+	scanf("%d", &n1);
+	printf("Digite: ");
+	scanf("%d", &n2);
+
+	printf("Maior: %d", maior(n1,n2));
+
+	return 0;
+}
