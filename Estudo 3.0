@@ -1,0 +1,21 @@
+//Crie uma func ̧ ̃ao que recebe como parˆametro um n ́umero inteiro e devolve o seu dobro//
+
+#include <stdio.h>
+
+int dobro(int n)
+{
+	return (2 * n);
+
+}
+
+int main (void)
+{
+	int n,x;
+	printf("Digite o numero: ");
+	scanf ("%d", &n);
+	
+	x = dobro(n);
+	
+	printf("O dobro de %d é %d", n, x);
+	return 0;
+}
