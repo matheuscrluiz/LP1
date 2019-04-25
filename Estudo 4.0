@@ -1,0 +1,35 @@
+//Um programa que contenha duas variáveis inteiras. Compare seus//
+//endereços e exiba o maior deles//
+
+
+#include <stdio.h>
+
+int main (void)
+{
+	int a,b;
+	int* p1;
+	int* p2;
+
+	printf("Digite A: ");
+	scanf("%d", &a);
+	 
+	printf("Digite B: ");
+	scanf("%d", &b);
+
+	printf("\nA = %d\nB = %d", a, b);
+
+	p1 = &a;
+	p2 = &b;
+	
+	printf("\nA = %p\nB = %p", p1, p2);
+	
+	if(p1 > p2)
+		{	
+			printf("\nMaior: %p", p1);
+		}
+	else{
+			printf("\nMaior: %p", p2);
+
+		}
+	return 0;
+}
