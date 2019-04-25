@@ -1,0 +1,31 @@
+//Escreva um programa que contem duas variaveis inteiras. Compare seus endereços e exiba o conteúdo do maior endereço.//
+
+#include <stdio.h>
+
+int main (void)
+{
+	int a, b;
+	int* p1;
+	int* p2;
+	
+	printf("Digite: ");
+	scanf("%d", &a);
+	printf("Digite: ");
+	scanf("%d", &b);
+
+	p1 = &a;
+	p2 = &b;
+	
+	if(p1>p2)
+		{
+
+			printf("\nMaior: %d", a);
+		}
+	else if(p2>p1)
+		{
+			printf("\nMaior: %d\n\n", b);
+		} 
+
+
+	return 0;
+}
