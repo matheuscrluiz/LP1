@@ -1,0 +1,40 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int inteiro;
+    float real;
+    char xa;
+    int* p1;
+    float* p2;
+    char* p3;
+    
+    printf("Digite inteiro: ");
+    scanf("%d", &inteiro);
+    printf("Digite float: ");
+    scanf("%f", &real);
+    printf("Digite um char: ");
+    scanf("%s", &xa);
+    
+    printf("\n %d e %f e %c\n", inteiro, real, xa);
+    
+    p1 = &inteiro;
+    p2 = &real;
+    p3 = &xa;
+    
+    *p1 = 5;
+    *p2 = 3.4;
+    *p3 = 'm';
+    
+    printf("%d e %f %c", inteiro, real, xa);
+    
+    return 0;
+}
