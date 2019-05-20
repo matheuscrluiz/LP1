@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+struct Atleta
+{
+	char nome[100];
+	int idade;
+	float altura;
+	float velocidade;
+};
+
+
+char exibir (struct Atleta* p)
+{
+	printf("Digite o nome do atleta: ");
+	scanf("%s", p->nome);
+	printf("Digite a idade do atleta: ");
+	scanf("%d", &p->idade);	
+	printf("Digite a altura do atleta: ");
+	scanf("%f", &p->altura);
+	printf("Digite a velocidade do atleta: ");
+	scanf("%f", &p->velocidade);
+
+	printf("Atleta: %s \nIdade: %d\nAltura: %f\nVelocidade: %f\n\n",p->nome,p->idade,p->altura,p->velocidade);
+	
+}
+int main (void)
+{
+	struct Atleta p1;
+	exibir(&p1);
+	
+	struct Atleta p2;
+	exibir(&p2);
+
+	struct Atleta p3;
+	exibir(&p3);
+
+	
+	return 0;
+}
