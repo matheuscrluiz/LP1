@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct T
+{
+    int a;
+    int b;
+};
+
+void preenche (struct T* t)
+{
+    printf("Digite seu tamanho: ");
+    scanf("%d", &t->a);
+    printf("Digite sua idade: ");
+    scanf("%d", &t->b);    
+}
+
+int main (void)
+{
+    struct T t;
+    preenche(&t);
+    printf("A=%d, B=%d\n", t.a, t.b);
+    return 0;
+}
