@@ -1,0 +1,35 @@
+#include <stdio.h>
+struct Dimensao
+{
+    int x;
+    int y;
+};
+struct Pessoa
+{
+    int id;
+    struct Dimensao ponto;
+    int posicao;
+};
+
+void preenche(struct Pessoa* p)
+{
+    printf("Digite sua identidade: ");
+    scanf("%d", &p->id);
+    printf("Digite a posiçao de X: ");
+    scanf("%d", &p->ponto.x);
+    printf("Digite a posição de Y: ");
+    scanf("%d", &p->ponto.y);
+    printf("Digite sua posição: ");
+    scanf("%d", &p->posicao);
+}
+int main()
+{
+    int i =0;
+    struct Pessoa vet[10];
+    for(i=0; i<10; i++)
+    {
+        preenche(&vet[i]);
+    }
+
+    return 0;
+}
