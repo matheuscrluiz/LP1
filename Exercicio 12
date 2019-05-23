@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+union cidadao
+{
+	int cpf;
+	int rg;
+	char nome[100];
+};
+
+int main(void)
+{
+
+	return 0;
+}
