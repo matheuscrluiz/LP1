@@ -1,0 +1,7 @@
+struct
+
+cada membro listado fará parte da estrutura, ela é aditiva. Seu tamanho é a soma dos membros mais o alinhamento.
+
+union
+só um membro será usado, excluindo a possibilidade dos outros. 
+Seu tamanho é o tamanho do maior membro, considerando o alinhamento.
